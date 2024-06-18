@@ -17,7 +17,7 @@ clock = pygame.time.Clock()
 game_grid = Grid()
 
 #MOSTRA UM BLOCO NA TELA(FINS DE DEBUG)
-block = IBlock()
+block = OBlock()
 #block.move(4,3)
 
 #LOOP PRINCIPAL 
