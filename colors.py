@@ -1,5 +1,6 @@
 class Colors:
-    
+    #CODIGOS QUE IDENTIFICAM AS CORES A SEREM UTILIZADAS NO JOGO
+
     dark_gray = (26, 31, 40)
     green = (47, 230, 23)
     red = (232, 18, 18)

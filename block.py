@@ -3,7 +3,7 @@ import pygame
 from position import Position
 
 class Block:
-    #METODO QUE DEFINE OS ATRIBUTOS DE CADA PEÇA DE TETRIS
+    #MFUNÇÃO QUE DEFINE OS ATRIBUTOS DE CADA PEÇA DE TETRIS
     def __init__(self, id):
         self.id = id
         self.cells = {}
@@ -13,12 +13,12 @@ class Block:
         self.rotation_state = 0 
         self.colors = Colors.get_cell_colors()
 
-    #METODO PARA MEXER AS PEÇAS DE TETRIS
+    #FUNÇÃO PARA MEXER AS PEÇAS DE TETRIS
     def move(self, rows, columns):
         self.row_offset += rows
         self.column_offset += columns   
 
-    #METODO QUE RETORNA A POSIÇÃO ATUAL DAS PEÇAS DE TETRIS
+    #FUNÇÃO QUE RETORNA A POSIÇÃO ATUAL DAS PEÇAS DE TETRIS
     def get_cell_positions(self):
         titles = self.cells[self.rotation_state]
         moved_titles = []
@@ -27,7 +27,7 @@ class Block:
             moved_titles.append(position)
         return moved_titles
 
-    #METODO QUE DESENHA AS PEÇAS NA TELA E DESENHA A GRID DO JOGO
+    #FUNÇÃO QUE DESENHA AS PEÇAS NA TELA E DESENHA A GRID DO JOGO
     def draw(self, screen):
         titles = self.get_cell_positions()
         for title in titles:

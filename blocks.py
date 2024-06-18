@@ -1,6 +1,7 @@
 from block import Block
 from position import Position
 
+#CLASSES DE CADA BLOCO DO JOGO QUE DEFINEM SUAS POSSIÇÕES AO ROTACIONAR
 class LBlock(Block):
     def __init__(self):
         super().__init__(id = 1)
